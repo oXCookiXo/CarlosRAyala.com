@@ -1,0 +1,40 @@
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+.custom-row {
+    overflow: hidden; 
+    text-align: center;
+    margin: 0 auto;
+}
+
+.custom-span {
+    display: inline-block;
+    /* font-size: 20px!important; */
+}
+
+.transbox {
+    margin: 30px;
+    background-color: black;
+    opacity: 0.75;
+}
+
+h1{
+    font-weight: bold;
+   
+}
+
+@media (min-width: 1600px) {
+    .text-box {
+        padding-top: 300px;
+    }
+}
+
+@media (max-width: 300px) {
+    .custom-span {
+        font-size: 16px!important;
+    }
+}

@@ -1,0 +1,47 @@
+{
+    "experience" : [
+        {
+            "company": "ColeParmer",
+            "position": "Full Stack Developer",
+            "from": "01/07/2018",
+            "to": null,
+            "projects": [
+                {
+                    "name": "TraceableLIVE Customer Service Admin Tool",
+                    "technologies": "WPF, .NET 4.6.2, .NET CORE 3.1",
+                    "responsabilities": "In this project, i used WPF to completley recreate an administration tool for the TraceableLIVE Customer Service team. Leveraging SQL Server and the TraveableLIVE API to Update and have visibility to customers accounts and pofile when client identify issues with their service. Along with this this tool allows for the Customer Service Team to view device data, device alarms, search for accounts and profiles based on keywords and send password reset emails."
+                },
+                {
+                    "name": "TraceableLIVE BackEnd",
+                    "technologies": ".NET 4.6.2., .NET CORE 3.1, Azure Platform (Azure Functions, Azure Service Bus, App Service, Webjobs, Azure PipeLines), SQL Server 2016, "
+                    
+                },                
+                {
+                    "name": "TraceableLIVE FrontEnd - WEB",
+                    "technologies": "EmberJs, Angular, Azure Platform (Cloud Services, App Services, Azure PipeLines)"
+                   
+                },
+                {
+                    "name": "MasterFlexLIVE BackEnd",
+                    "technologies": ".NET 4.6.2., .NET CORE 3.1, Azure Platform (Azure Functions, Azure Service Bus, App Service, Webjobs, Azure PipeLines), SQL Server 2016, "
+                    
+                },
+                {
+                    "name": "MasterFlexLIVE FrontEnd - Mobile",
+                    "technologies": "Xamarin Forms, .NET Standard 2.0 , AppCenter"
+                },
+                {
+                    "name": "CPLive BackEnd",
+                    "technologies": ".NET 4.6.2., .NET CORE 3.1, Azure Platform (Azure Functions, Azure Service Bus, App Service, Webjobs, Azure PipeLines), SQL Server 2016, "
+                    
+                },
+                {
+                    "name": "CI/CD Azure DevOps",
+                    "responsabilities": "Create and Maintain the continuous integration and delivery of the backend applications by leveraging the DevOps pipelines funtionality"
+                }
+            ],
+            "logo": "https://cms-resources.coleparmer.com/e/cp-logo-email.png",
+            "recommendation": ""
+        }
+    ]
+}
