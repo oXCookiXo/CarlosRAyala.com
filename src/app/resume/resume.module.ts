@@ -5,6 +5,9 @@ import { ResumeRoutingModule } from './resume-routing.module';
 import { ResumeComponent } from './resume.component';
 import { FormsModule } from '@angular/forms';
 import { PdfViewerModule } from 'ng2-pdf-viewer';
+import { importType } from '@angular/compiler/src/output/output_ast';
+import {MatButtonModule} from '@angular/material/button'
+
 
 
 @NgModule({
@@ -15,7 +18,8 @@ import { PdfViewerModule } from 'ng2-pdf-viewer';
     CommonModule,
     ResumeRoutingModule,
     FormsModule,
-    PdfViewerModule
+    PdfViewerModule,
+    MatButtonModule
   ]
 })
 export class ResumeModule { }

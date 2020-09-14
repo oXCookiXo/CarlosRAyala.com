@@ -3,36 +3,32 @@ import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { AboutMeModule } from './about-me/about-me.module';
 import { ProfessionalExperienceModule } from './professional-experience/professional-experience.module'
-import { ResumeModule} from './resume/resume.module'
 import { importType } from '@angular/compiler/src/output/output_ast';
 import { NotFoundComponent } from './not-found/not-found.component'
 import { from } from 'rxjs';
-import { AboutMeComponent } from './about-me/about-me.component';
-import { ProfessionalExperienceCompanyComponent } from './professional-experience/professional-experience-company/professional-experience-company.component';
-import { ResumeComponent } from './resume/resume.component';
-import { ProfessionalExperienceComponent } from './professional-experience/professional-experience.component';
+import { ResumeModule } from './resume/resume.module';
 
-const appRoutes: Routes = [
+export const appRoutes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: 'home', component : HomeComponent },
   {
     path: 'about-me',
-    loadChildren: () => AboutMeModule
+    loadChildren: () => import('./about-me/about-me.module').then(mod => mod.AboutMeModule)
   },
   {
     path: 'experience',
-    loadChildren: () => ProfessionalExperienceModule
+    loadChildren: () => import('./professional-experience/professional-experience.module').then(mod => mod.ProfessionalExperienceModule)
   },
   {
     path: 'resume',
-    component: ResumeComponent
+    loadChildren: () => import('./resume/resume.module').then(mod => mod.ResumeModule)
   },
   { path: '**', component: NotFoundComponent }
 
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(appRoutes)],
+  imports: [RouterModule.forRoot(appRoutes, {useHash: true})],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
