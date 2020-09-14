@@ -1,5 +1,6 @@
 <!-- SideNav-->
 <mat-sidenav-container class="sidenav-container">>
+  
   <!--Mobile Nav-->
   <mat-sidenav #drawer class="sidenav" fixedInViewport="false"
       [ngClass]="{hidden: !(isHandset$ | async)}"
@@ -10,7 +11,7 @@
         <a mat-list-item routerLink="home"><i class="fa fa-home" aria-hidden="true"></i>Home</a>
         <a mat-list-item routerLink="about-me" ><i class="fa fa-user"></i>About</a>
         <a mat-list-item routerLink="experience" ><i class="fa fa-briefcase" aria-hidden="true"></i>Experience</a>
-        <a mat-list-item routerLink="resume" ><i class="fa fa-briefcase" aria-hidden="true"></i>Resume</a>
+        <a mat-list-item routerLink="resume" ><i class="fa fa-newspaper-o" aria-hidden="true"></i>Resume</a>
     </mat-nav-list>
   </mat-sidenav>
 
@@ -29,16 +30,17 @@
             <a routerLink="home"><i class="fa fa-home" aria-hidden="true"></i>Home</a>
             <a routerLink="about-me"><i class="fa fa-user"></i>About</a>
             <a routerLink="experience" ><i class="fa fa-briefcase" aria-hidden="true"></i>Experience</a>    
-            <a routerLink="resume" ><i class="fa fa-briefcase" aria-hidden="true"></i>Resume</a>         
+            <a routerLink="resume" ><i class="fa fa-newspaper-o" aria-hidden="true"></i>Resume</a>         
         </mat-nav-list>
     </mat-toolbar>
     
     <!-- Add Content Here -->
     <ng-content> </ng-content>
   </mat-sidenav-content>
+
 </mat-sidenav-container>
 <footer>
   <div layout="row" layout-align="center center">
-      <h2>My Awesome Footer</h2>
+      <!-- <h2>My Awesome Footer</h2> -->
   </div>
 </footer>

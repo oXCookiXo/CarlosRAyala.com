@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class ResumeComponent implements OnInit {
 
   constructor() { }
-  pdfSource =  "https://vadimdez.github.io/ng2-pdf-viewer/assets/pdf-test.pdf";
+  pdfSource =  "https://raw.githubusercontent.com/oXCookiXo/CarlosRAyala.com/master/CAyala-Resume-2020.pdf";
   ngOnInit(): void {
   }
 
