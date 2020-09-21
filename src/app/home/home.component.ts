@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import * as $ from 'jquery';
-import {open,save} from '../home/scripts.js'
+import {open,save} from '../home/typeWriterText.js'
 
 @Component({
   selector: 'app-home',
@@ -14,7 +14,7 @@ export class HomeComponent implements OnInit {
 
   public ngOnInit()
   {
-    $.getScript('./assets/scripts.js');
+    $.getScript('./assets/typeWriterText.js');
   }
 
   public  open()
